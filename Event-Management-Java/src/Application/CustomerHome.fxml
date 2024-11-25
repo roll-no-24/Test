@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="scene_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controller">
+   <children>
+      <Label layoutX="238.0" layoutY="58.0" text="Logged in as Customer" />
+<!--      <Button layoutX="61.0" layoutY="54.0" mnemonicParsing="false" text="Menu" />-->
+      <Button fx:id="logOut" layoutX="496.0" layoutY="54.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
+      <Button layoutX="217.0" layoutY="103.0" mnemonicParsing="false" onAction="#requestForCorporateEvent" text="Request For Corporate Event" />
+      <Button layoutX="226.0" layoutY="150.0" mnemonicParsing="false" onAction="#registerFortourBtn" text="Search For Tour Package" />
+      <Button layoutX="223.0" layoutY="200.0" mnemonicParsing="false" onAction="#registerFortourBtn" text="Register For Tour Package" />
+      <Button layoutX="215.0" layoutY="242.0" mnemonicParsing="false" text="View The Detail Of All Events" />
+      <Button layoutX="274.0" layoutY="289.0" mnemonicParsing="false" onAction="#payBillBtn" text="Pay Bill" />
+   </children>
+</AnchorPane>
