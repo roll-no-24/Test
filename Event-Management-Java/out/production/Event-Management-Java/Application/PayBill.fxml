@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="center" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="666.0" prefWidth="724.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Application.Controller">
+    <AnchorPane fx:id="scene_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="663.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <Label layoutX="238.0" layoutY="58.0" text="Logged in as Customer" />
+            <Button layoutX="61.0" layoutY="54.0" mnemonicParsing="false" onAction="#customerHome" text="Menu" />
+            <Button layoutX="496.0" layoutY="54.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
+         <TextArea layoutX="346.0" layoutY="131.0" prefHeight="444.0" prefWidth="274.0" />
+         <TextField fx:id="eventIdForPayBill" layoutX="141.0" layoutY="132.0" />
+         <Button layoutX="189.0" layoutY="174.0" mnemonicParsing="false" onAction="#findTotalBill" text="Submit" />
+         <Label layoutX="47.0" layoutY="136.0" text="Enter Evnet Id:" />
+         <TextField fx:id="totalBillForPayBill" layoutX="136.0" layoutY="222.0" prefHeight="26.0" prefWidth="158.0" />
+         <Label layoutX="47.0" layoutY="226.0" text="Total Amount:" />
+         <Button layoutX="189.0" layoutY="262.0" mnemonicParsing="false" onAction="#payBill" text="Pay Bill" />
+         <Text fx:id="messgaeBoxForPayBill" layoutX="178.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+        </children>
+    </AnchorPane>
+</VBox>
